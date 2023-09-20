@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F3F3F3;
+}
+
+.card-Container {
+  width: 1090px;
+  align-self: center;
+  padding: 15px;
+  display: flex;
+  border-radius: 20px;
+  background-color: #FFF;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.08);
+}
+
+.text-container {
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.introText h2 {
+  width: 500px;
+  color: #284B80;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.introText p {
+  padding-top: 24px;
+  width: 545px;
+  color: #8D98AA;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.profile_side {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.profileImage {
+  /* width: 63px; */
+  padding-bottom: 20px;
+}
+
+.about {
+  padding-left: 25px;
+  gap: 5px;
+  width: 410px;
+}
+
+.about h4 {
+  color: #284B80;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.about p {
+  /* width: 545px; */
+  color: #8D98AA;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.share {
+  padding-left: 50px;
+  align-self: first baseline;
+}
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 1164px) {
+  .card-Container {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .card-Container {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vb;
+    height: 100vh;
+  }
+
+  .text-container {
+    padding-top: 20px;
+    /* aspect-ratio: 16/9; */
+  }
+
+  .introText p {
+    text-wrap: wrap;
+    width: 450px;
+  }
+
+  .share {
+    padding-left: 10px;
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+
+  .card-Container {
+    height: 250%;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .profile_side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about h4 {
+    color: #ed840d;
+    line-height: 16px;
+  }
+
+  .share {
+    padding-top: 20px;
+    align-self: flex-end;
+  }
+
+
+}
